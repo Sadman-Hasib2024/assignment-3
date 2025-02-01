@@ -4,8 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- fontawsome cdn -->
+<script src="https://kit.fontawesome.com/ceb82678b8.js" crossorigin="anonymous"></script>
+
+     <!-- tailwind cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
+<body class="">
+    <!-- banner section -->
+    <header class="bg-[url('/images/cat-big.png')] bg-cover bg-center min-h-[400px] md:min-h-[800px] relative flex items-center">
+      <div class="text-left max-w-sm md:max-w-lg mx-5 md:m-20 md:ml-20">
+          <h1 class="text-3xl md:text-4xl font-bold font-['ADLaM_Display'] text-black">
+              Pamper Your Pet,<br> Because They Deserve <br>the Best
+          </h1>
+          <p class="mt-4 text-gray-700">
+              Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button class="mt-6 px-6 py-2 bg-[#FFDC26] hover:bg-orange-600 text-white rounded-lg shadow-md">
+              Find a pet
+          </button>
+      </div>
+  </header>
+
+  
+   <main>
+    <!-- browse section -->
+    <div class="mt-20 px-4 sm:px-6">
+      <h1 class="text-3xl md:text-4xl font-bold font-['ADLaM_Display'] text-black my-9 text-left">
+        Browse My Categories
+      </h1>
+    
+      <!-- Card Container -->
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-4 sm:gap-6 my-9">
+        
+        <!--Card-1 -->
+        <div class="bg-[#F9DF8A] flex flex-col items-center p-4 md:p-6 rounded-lg shadow-md w-full max-w-[150px] mx-auto">
+          <img class="bg-white rounded-full p-2 md:p-4 w-16 md:w-24" src="images/dog-cartoon.png" alt="Dog">
+          <h1 class="font-semibold text-lg mt-2">Dog</h1>
+          <p class="text-gray-600 text-sm">3 items</p>
+        </div>
+       <!-- card-2 -->
+        <div class="bg-[#F9DF8A] flex flex-col items-center p-4 md:p-6 rounded-lg shadow-md w-full max-w-[150px] mx-auto">
+          <img class="bg-white rounded-full p-2 sm:p-4 w-16 md:w-24" src="images/cat-cartoon.png" alt="Cat">
+          <h1 class="font-semibold text-lg mt-2">Cat</h1>
+          <p class="text-gray-600 text-sm">5 items</p>
+        </div>
+        <!-- card-3 -->
+    
+        <div class="bg-[#F9DF8A] flex flex-col items-center p-4 md:p-6 rounded-lg shadow-md w-full max-w-[150px] mx-auto">
+          <img class="bg-white rounded-full p-2 sm:p-4 w-16 md:w-24" src="images/fish-cartoon.png" alt="Fish">
+          <h1 class="font-semibold text-lg mt-2">Fish</h1>
+          <p class="text-gray-600 text-sm">2 items</p>
+        </div>
+        <!-- card-4 -->
+        <div class="bg-[#F9DF8A] flex flex-col items-center p-4 md:p-6 rounded-lg shadow-md w-full max-w-[150px] mx-auto">
+          <img class="bg-white rounded-full p-2 sm:p-4 w-16 md:w-24" src="images/bird-cartoon.png" alt="Bird">
+          <h1 class="font-semibold text-lg mt-2">Bird</h1>
+          <p class="text-gray-600 text-sm">4 items</p>
+        </div>
+    <!-- card-5 -->
+        <div class="bg-[#F9DF8A] flex flex-col items-center p-4 sm:p-6 rounded-lg shadow-md w-full max-w-[150px] mx-auto">
+          <img class="bg-white rounded-full p-2 sm:p-4 w-16 sm:w-20 md:w-24" src="images/rabbit-cartoon.png" alt="Rabbit">
+          <h1 class="font-semibold text-lg mt-2">Rabbit</h1>
+          <p class="text-gray-600 text-sm">3 items</p>
+        </div>
+    <!-- card-6 -->
+        <div class="bg-[#F9DF8A] flex flex-col items-center p-4 sm:p-6 rounded-lg shadow-md w-full max-w-[150px] mx-auto">
+          <img class="bg-white rounded-full p-2 sm:p-4 w-16 md:w-24" src="images/rabbit-cartoon.png" alt="Rabbit">
+          <h1 class="font-semibold text-lg mt-2">Reptile</h1>
+          <p class="text-gray-600 text-sm">1 item</p>
+        </div>
+    
+      </div>
+    </div>
+    
+   </main>
+  
+
     
 </body>
 </html>
